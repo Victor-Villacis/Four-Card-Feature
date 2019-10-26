@@ -22,3 +22,5 @@ Your task is to build out the project to the designs inside the `/design` folder
 * Learning Bulma
 * Getting card order right in mobile i.e., karma before calculator
 * Aligning the layout with grid
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/15a01bfa-8a6f-473c-b1e5-a270a4b5b256/deploy-status)](https://app.netlify.com/sites/4card/deploys)
