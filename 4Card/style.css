@@ -1,0 +1,60 @@
+.attribution {
+  font-size: 13px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.supervisor {
+  border-top: 5px solid hsl(180, 62%, 55%);
+  border-radius: 10px;
+}
+.team-builder {
+  border-top: 5px solid hsl(0, 78%, 62%);
+  border-radius: 10px;
+}
+.karma {
+  border-top: 5px solid hsl(34, 97%, 64%);
+  border-radius: 10px;
+}
+.calculator {
+  border-top: 5px solid hsl(212, 86%, 64%);
+  border-radius: 10px;
+}
+
+.card-content {
+  height: 225px;
+}
+
+@media only screen and (max-width: 768px) {
+  .reverse {
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-gap: 20px;
+    margin: 25px;
+  }
+  .last {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    /* max-width: 1080px; */
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .span-row-2 {
+    grid-row: span 2 / auto;
+  }
+
+  #sub,
+  #title {
+    font-size: 30px;
+  }
+}

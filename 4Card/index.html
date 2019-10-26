@@ -4,86 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>4Cards</title>
-    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
-    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <style>
-/* 
-    * {
-        border: 1px dotted green ;
-        
-        
-    } */
-    
+        @font-face {
+        font-family: Poppins;
+        src: url(https://fonts.google.com/specimen/Poppins);
+        }
 
-
-     .supervisor {
-       border-top: 5px solid #43d2d6;
-       border-radius: 10px;
-     }
-     .team-builder {
-       border-top: 5px solid #e55459;
-       border-radius: 10px;
-     }
-     .karma {
-       border-top: 5px solid #f7ae50;
-       border-radius: 10px;
-       
-     }
-     .calculator {
-       border-top: 5px solid #549ff2;
-       border-radius: 10px;
-     }
-
-     @media only screen and (max-width:768px) {
-         .reverse {
-          display: flex;
-          flex-direction: column;
-         }
-         .last {
-             order: 1;
-         }
-         .reverse {
-             display: grid;
-             grid-gap: 20px;
-         }
-     }
-     
- 
-
-
-     @media  screen and (min-width:768px) {
-         .grid {
-             display: grid;
-             grid-template-columns: repeat(3, 1fr);
-             grid-gap: 20px;
-             /* max-width: 1080px; */
-             align-items: center;
-             margin: 0 auto;
-         }
-        
-         .span-row-2{grid-row: span 2 / auto;}
-     }
- 
-     .card-image {
-         position: relative;
-         float: right;
-     }
-     .card-content {
-         height: 275px;
-     }
-    
+        body {
+            font-size: 15px;
+            font-family: Poppins;
+        }
     </style>
 </head>
 <body>
     <section class="hero">
         <div class="hero-body ">
             <div class="container has-text-centered">
-                <h1 class="subtitle is-5">Reliable, efficient delivery</h1>
-                <h2 class="title is-5">Powered by Technology</h2>
-                <p class="has-text-grey">Our Artificial Intelligence powered tools use millions of projects data points to sensure that your project is successful</p>
+                <h1 class="subtitle" id="sub">Reliable, efficient delivery</h1>
+                <h2 class="title is-5" id="title">  Powered by Technology</h2>
+                <p class="has-text-grey column is-half is-offset-one-quarter">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
             </div>
-            
         </div>
     </section>
 <section class="container ">
@@ -92,10 +36,10 @@
             <div class="card supervisor">
                 <div class="card-content">
                     <h1 class="title is-5">Surpervisor</h1>
-                    <p class="has-text-grey">Our Artificial Intelligence powered tools use millions of projects data pooints to sensure that your project is successful</p>
+                    <p class="has-text-grey">Monitors activity to identify project roadblocks</p>
                     <br>
                     <div class="card-image">
-                        <figure class="image is-64x64">
+                        <figure class="image is-64x64 is-pulled-right">
                         <img src="images\icon-supervisor.svg" alt="Image">
                         </figure>
                     </div>
@@ -106,10 +50,10 @@
             <div class="card team-builder">
                 <div class="card-content">
                     <h1 class="title is-5">Team Builder</h1>
-                    <p class="has-text-grey">Our Artificial Intelligence powered tools use millions of projects data pooints to sensure that your project is successful</p>
+                    <p class="has-text-grey">Scans our talent network to create the optimal team for your project</p>
                     <br>
                     <div class="card-image">                        
-                        <figure class="image is-64x64">
+                        <figure class="image is-62x62 is-pulled-right">
                         <img src="images\icon-team-builder.svg" alt="Image">
                         </figure>
                     </div>
@@ -120,10 +64,10 @@
             <div class="card calculator">
                 <div class="card-content ">
                     <h1 class="title is-5">Calculator</h1>
-                    <p class="has-text-grey">Our Artificial Intelligence powered tools use millions of projects data pooints to sensure that your project is successful</p> 
+                    <p class="has-text-grey">Uses data from past projects to provide better delivery estimates</p> 
                     <br>
                     <div class="card-image">
-                        <figure class="image is-64x64">
+                        <figure class="image is-64x64 is-pulled-right">
                         <img src="images\icon-calculator.svg" alt="Image">
                         </figure>
                     </div>
@@ -134,10 +78,10 @@
             <div class="card karma">
                 <div class="card-content">
                     <h1 class="title is-5">Karma</h1>
-                    <p class="has-text-grey">Our Artificial Intelligence powered tools use millions of projects data pooints to sensure that your project is successful</p>
+                    <p class="has-text-grey">Regularly evaluates our talent to ensure quality</p>
                     <br>
                     <div class="card-image">
-                        <figure class="image is-64x64">
+                        <figure class="image is-64x64 is-pulled-right">
                         <img src="images\icon-karma.svg" alt="Image">
                         </figure>
                     </div>
@@ -146,5 +90,11 @@
         </div>
     </div>
 </section>
+<footer class="footer">
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://github.com/Victor-Villacis">Victor Villacis</a>.
+        </p>
+</footer>
 </body>
 </html>
